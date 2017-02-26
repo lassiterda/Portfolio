@@ -102,8 +102,6 @@ main a i {
   transition: 300ms ease-in-out;
 }
 
-
-
 main a:hover #linkden, main a:focus #linkden {
   color: #fff;
   background-color: #0077b5;
@@ -242,13 +240,13 @@ textarea {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 980px) {
+@media (max-width: 980px) {
   h1 span {
     display: none;
   }
 }
 /*tablet and Mobile layout*/
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
   nav {
     display: block;
@@ -271,10 +269,6 @@ textarea {
     margin-top: 0px;
   }
 
-  /*header:hover nav {
-        margin-top: 0;
-  }*/
-
   .row {
     width: 85%;
   }
@@ -288,7 +282,7 @@ textarea {
     width: 180px;
 }
 
-@media only screen and (max-width: 640px) {
+@media (max-width: 640px) {
 
   .banner {
     display: none;
