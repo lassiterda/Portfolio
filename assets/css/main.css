@@ -262,7 +262,8 @@ textarea {
   #hamburger {
     display: inline-block;
     float: right;
-    margin: 10px;
+    margin: 15px;
+    font-size: 25px;
   }
 
   .open{
@@ -283,6 +284,11 @@ textarea {
 }
 
 @media (max-width: 640px) {
+
+  h1 {
+    font-size: 25px;
+    margin: 15px 10px;
+  }
 
   .banner {
     display: none;
