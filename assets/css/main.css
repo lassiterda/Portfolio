@@ -92,11 +92,15 @@ font-size: 16px;
 color: #222;
 }
 
-main a i {
+main li {
+  margin: 0 20px;
+  display: inline-block;
+}
+
+main li a i {
   height: 32px;
   width: 32px;
   padding: 5px;
-  margin: 0 20px;
   border-radius: 5px;
   color: #222;
   transition: 300ms ease-in-out;
