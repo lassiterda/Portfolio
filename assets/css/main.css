@@ -1,0 +1,311 @@
+body {
+  font-family: 'Roboto', Sans-Serif;
+  text-align: center;
+  background-color: #000000;
+  color: white;
+}
+
+.site-wrapper {
+  overflow: hidden;
+}
+
+.container {
+  background-color: white;
+  color: #444;
+  font-weight: 900;
+  text-align: center;
+  box-shadow: 0 -2px 3px rgba(0,0,0,0.42);
+  padding-bottom: 150px;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width:100%;
+  background-color: #000000;
+  color: #ccc;
+  top: 0px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.42);
+  font-size: 20px;
+}
+header * {
+  display: inline-block;
+}
+
+nav {
+  float: right;
+  margin: 0;
+  margin-right: 15px;
+}
+
+nav ul li a {
+  color: #ccc;
+  transition: 300ms ease-in-out;
+  margin: 20px 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#hamburger {
+  display: none;
+  transition: 300ms ease-in-out;
+}
+
+ nav ul li a:hover, nav ul li a:focus, #hamburger:hover, #hamburger:focus {
+  color: white;
+}
+
+body p {
+  color: #ccc;
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+h1 {
+ margin: 10px 15px;
+ font-size: 40px;
+ letter-spacing: 2px;
+ font-weight: 100;
+ float: left;
+}
+
+h1 span {
+  font-size: 20px;
+  font-family: 'Oswald';
+  margin-left: 15px;
+   letter-spacing: 1px;
+}
+
+hr {
+  width: 50%;
+  margin: 30px auto;
+}
+
+h2 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+main p {
+padding: 10px 0;
+font-size: 16px;
+color: #222;
+}
+
+main a i {
+  height: 32px;
+  width: 32px;
+  padding: 5px;
+  margin: 0 20px;
+  border-radius: 5px;
+  color: #222;
+  transition: 300ms ease-in-out;
+}
+
+
+
+main a:hover #linkden, main a:focus #linkden {
+  color: #fff;
+  background-color: #0077b5;
+
+}
+
+main a:hover #github, main a:focus #github {
+  color: #fff;
+  background-color: #000;
+}
+
+main a:hover #codepen, main a:focus #codepen {
+    color: #fff;
+    background-color: #000;
+ }
+
+main a:hover #stackOverflow, main a:focus #stackOverflow {
+  color: #fff;
+  background-color: #f48024;
+}
+
+/*body styles*/
+.banner {
+  height: 450px;
+  background-image: url("../images/ity.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main {
+  box-shadow: 0 -2px 3px rgba(0,0,0,0.42);
+}
+.row {
+  width: 60%;
+  margin: 20px auto;
+}
+
+.link {
+visibility: hidden;
+margin-top: -90px;
+position: absolute;
+}
+
+#firstLink {
+  margin-top: -400px;
+}
+
+.round {
+  border-radius: 100%;
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.42);
+  display: inline-block;
+  margin: 20px 20px;
+  position: relative;
+}
+
+
+.headshot{
+  height: 250px;
+  margin: -125px auto 0 auto;.
+  box-shadow: 0 -2px 3px rgba(0,0,0,0.42);
+}
+
+.example {
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  height: 175px;
+  width: 175px;
+}
+
+.example img {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  transition: 300ms ease-in-out;
+
+}
+.example h4 {
+  position: absolute;
+  background-color: rgba(25,118,210, .80);
+  height: 50px;
+  width: 185px;
+  padding: 20px 0;
+  color: white;
+  transition: 300ms ease-in-out;
+}
+
+.example:hover h4, .example:focus h4 {
+  margin-top: -80px;
+}
+.example:hover img, .example:focus img {
+  height: 180px;
+  width: 180px;
+}
+
+ h4{
+  font-family: 'Oswald';
+  font-weight: normal;
+  font-size: 20px;
+  margin: -5px;
+}
+
+form {
+  width: 80%;
+  margin: 10px auto;
+}
+
+form p {
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+input[type="text"] {
+  display: block;
+  margin: 10px 0px;
+  width: 50%;
+}
+
+textarea {
+  margin: 10px 0px;
+  width: 100%;
+  height: 200px;
+  font-family: 'Roboto';
+  font-weight: 900;
+}
+
+#btn {
+  display: inline-block;
+  float: right;
+  padding: 10px 20px;
+  background-color: rgba(25,118,210, 1);
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 980px) {
+  h1 span {
+    display: none;
+  }
+}
+/*tablet and Mobile layout*/
+@media only screen and (max-width: 768px) {
+
+  nav {
+    display: block;
+    width: 100%;
+    margin-top: -250px;
+    transition: 300ms ease-in-out;
+  }
+
+  nav ul li {
+    display: block;
+  }
+
+  #hamburger {
+    display: inline-block;
+    float: right;
+    margin: 10px;
+  }
+
+  .open{
+    margin-top: 0px;
+  }
+
+  /*header:hover nav {
+        margin-top: 0;
+  }*/
+
+  .row {
+    width: 85%;
+  }
+
+  .example h4 {
+    margin-top: -80px;
+  }
+
+  .example img {
+    height: 180px;
+    width: 180px;
+}
+
+@media only screen and (max-width: 640px) {
+
+  .banner {
+    display: none;
+  }
+
+  .container {
+    margin-top:50px;
+  }
+
+  .row {
+    width: 90%;
+  }
+
+  .headshot {
+    margin-top: 50px;
+  }
+  form {
+    width: 100%;
+  }
+}
