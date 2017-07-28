@@ -16,15 +16,8 @@ function removeClass(ele, cls) {
     }
 }
 
-//Event Listeners on both the the Menu Icon and Menu Items
-  var navList = document.getElementsByClassName("nav-link")
-
-function init() {
-    document.getElementById("hamburger").addEventListener("click", toggleMenu);
-
-    for( var i = 0; i < navList.length; i++) {
-      navList[i].addEventListener('click',toggleMenu);
-    }
+function selectAll(el) {
+  return document.querySelectorAll(el);
 }
 
 //The actual fuction
@@ -47,7 +40,12 @@ function toggleMenu() {
 //Prevent the function to run before the document is loaded
 document.addEventListener('readystatechange', function() {
     if (document.readyState === "complete") {
-        init();
-        console.log(document.getElementById('hamburger'));
+        document.getElementById("hamburger").addEventListener("click", toggleMenu);
+
+        var navList = selectAll('.nav-link')
+
+        for( var i = 0; i < navList.length; i++) {
+          navList[i].addEventListener('click',toggleMenu);
+        }
     }
 });
