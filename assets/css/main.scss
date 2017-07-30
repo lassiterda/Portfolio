@@ -217,6 +217,7 @@ position: absolute;
 
   .skill-detail {
     display: inline-block;
+    margin-bottom: 30px;
     width: 32%;
 
     i {
@@ -225,6 +226,7 @@ position: absolute;
 
     .skill-list {
       display: table;
+      margin: 20px auto;
 
       li {
         display: table-row;
@@ -308,6 +310,6 @@ position: absolute;
   .skill-detail {
     display: block;
     width: 90%;
-    margin: 5px auto;
+    margin: 30px auto;
   }
 }
