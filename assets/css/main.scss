@@ -180,10 +180,11 @@ section {
 visibility: hidden;
 margin-top: -90px;
 position: absolute;
-  &:first-of-type {
-      margin-top: -350px;
-  }
 }
+
+ #firstLink {
+   margin-top: -350px;
+ }
 
 .round {
   border-radius: 100%;
@@ -248,6 +249,7 @@ position: absolute;
 }
 
 #contact {
+  padding-bottom: 50px;
   span {
     display: inline-block;
     margin: 5px 3px 15px;
