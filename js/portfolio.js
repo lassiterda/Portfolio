@@ -4,7 +4,7 @@ var portfolio = {}
 portfolio['hangman'] = {
   title: 'Hangman (War-Games Themed)',
   description: 'War-Games Themed Hangman Game build using simple HTML, CSS and vanilla Javascript.  Utilizes a custom \'slow\' for loop to print out each line.',
-  imgURL: './assets/images/hangman.png',
+  imgURL: './assets/images/Hangman.png',
   technologies: ['HTML', 'CSS', 'Javascript'],
   repoURL: 'https://github.com/lassiterda/Hangman-Game',
   demoURL: 'https://lassiterda.github.io/Hangman-Game/',
@@ -12,7 +12,7 @@ portfolio['hangman'] = {
 portfolio['jeopardy'] = {
   title: 'Jeopardy Trivia',
   description: 'Jeopardy Trivia game built with HTML, CSS using BootStrap (including modal plugin), and vanilla Javascript.  Categories/questions are stored as a single, nested Javascript Object.',
-  imgURL: './assets/images/jeopardy.png',
+  imgURL: './assets/images/Jeopardy.png',
   technologies: ['HTML', 'CSS','Bootstrap','Javascript'],
   repoURL: 'https://github.com/lassiterda/Jeopardy-Trivia',
   demoURL: 'https://lassiterda.github.io/Jeopardy-Trivia/',
