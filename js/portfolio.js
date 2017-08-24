@@ -26,7 +26,7 @@ portfolio['bamazon'] = {
   repoURL: 'https://github.com/lassiterda/bamazon',
 }
 
-portfolio['howIsIt'] = {
+portfolio['HowIsIt'] = {
   title: 'HowIsIt (HII)',
   description: 'Simple trip planning application which utilizes third-Party APIs (Goodgle, Yelp, and Weather Underground) to provide Weather and location aware suggestions for users on a given day.',
   imgURL: './assets/images/HowIsIt.png',
