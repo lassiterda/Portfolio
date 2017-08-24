@@ -1,5 +1,3 @@
-
-
  // color vars
 $neutral: #efefef;
 $main: #565656;
@@ -80,7 +78,7 @@ h3 {
 
 header {
   position: fixed;
-  z-index: 2;
+  z-index: 1000;
   width:100%;
   background-color: $main;
   color: $neutral;
@@ -197,24 +195,46 @@ position: absolute;
 
 .portfolio-container {
   margin: 20px auto;
+  position: relative
 }
 
 .example {
+  box-shadow: 1px 0px 10px rgba(0,0,0,0.42) inset;
   background-color: $text;
-  transition: .2s ease-in;
+  background-size: 220px 220px;
+  transition: .3s ease-in-out;
   overflow: hidden;
   display: inline-block;
   height: 200px;
   width: 200px;
   margin: 20px;
+  z-index: -1;
 
-  &:nth-of-type(even) {
-      transition: .3s ease-in;
- }
-   &:nth-of-type(odd) {
-    transition: .35s ease-in;
+  .label {
+    background-color: rgba(65, 179, 163, .9);
+    font-size: 18px;
+    margin-top: 200px;
+    padding-top: 20px;
+    height: 75px;
+    color: white;
+    transition: 250ms ease-in-out;
+    p {
+      font-size: 14px;
+      color: white;
+      padding: 10px;
+    }
+  }
+
+  &:hover {
+    background-size: 200px 200px;
+  }
+  
+  &:hover > .label {
+  margin-top: 110px;
   }
 }
+
+
 
 .skill-detail {
   display: inline-block;
@@ -271,10 +291,145 @@ position: absolute;
   }
 }
 
+.modal-overlay
+{
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+
+    width: 100%;
+    height: 100%;
+
+    transition: $transitionMed opacity ease;
+
+    background: rgba(0,0,0,.6);
+}
+
+.modal {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+
+    opacity: 0;
+
+    width: 94%;
+    padding: 24px 20px;
+
+    transition: 1ms opacity ease;
+    transform: translate(-50%, -50%);
+
+    border-radius: 2px;
+    background: #fff;
+
+    div {
+      padding: 15px;
+    }
+
+    h2 {
+      color: $text;
+    }
+
+    img {
+      width: 50%;
+      display: inline-block;
+      border-radius: 5px;
+    }
+
+    a {
+      text-decoration: none;
+      color: $secondary;
+      border: 1px solid $secondary;
+      border-radius: 5px;
+      padding: 10px 15px;
+      margin: 10px;
+      transition: $transitionMed ease-in;
+
+      &:hover {
+        background-color: $secondary;
+        color: white;
+      }
+    }
+    ul {
+      display: inline-block;
+      height: 100%;
+      width: 50%;
+      vertical-align: text-bottom;
+
+      li {
+      color: $text;
+      display: table-row;
+      text-align: left !important;
+
+      &::before{
+        display: table-cell;
+        text-align: left;
+        padding: 0 40px;
+        margin-top: -50px;
+        font-size: 30px;
+        font-weight: bolder;
+        content: "• ";
+        color: $secondary;
+      }
+    }
+  }
+}
+
+
+.modal-open {
+  opacity: 1;
+}
+
+.modal.modal-open.modal-anchored {
+    top: 20px;
+    transform: translate(-50%, 0);
+}
+
+.modal-overlay.fade-and-drop {
+    display: block;
+    opacity: 0;
+}
+
+.modal.fade-and-drop {
+    top: -300%;
+    opacity: 1;
+    display: block;
+}
+
+.modal.fade-and-drop.modal-open {
+  top: 60%;
+  transition: 500ms top 500ms ease;
+}
+
+.modal-modal.fade-and-drop.modal-open.modal-anchored {
+  transition: 500ms top 500ms ease;
+}
+
+.modal-overlay.fade-and-drop.modal-open {
+    top: 0;
+    transition: 500ms opacity ease;
+    opacity: 1;
+}
+
+.modal.fade-and-drop {
+  transition: 500ms top ease;
+}
+
+.modal-overlay.fade-and-drop {
+  transition: 500ms opacity 500ms ease;
+}
+
 
 @media (max-width: 980px) {
   h1 span {
     display: none;
+  }
+
+  .example .label {
+  margin-top: 110px;
   }
 }
 
